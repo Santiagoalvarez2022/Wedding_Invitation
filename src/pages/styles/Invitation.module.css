@@ -1,0 +1,34 @@
+.pageContainer{
+    width: 100vw;
+    background-color:  #175796 ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+
+
+}
+
+
+/*animacion para que cuando se comience a ver un 20% de la pagina se cambia a background-color: #8BAECE  y apareczca el texto*/
+
+.title{
+    font-size: 1.6em;
+    font-weight: 700;
+
+}
+
+.textContainer{
+    padding:  2em ;
+    
+}
+
+
+.sangria{
+    padding-left: .5em;
+}
+.paragraph,.sangria{
+    font-size: 1.3em;
+    font-weight: 600;
+    text-align: start;  
+}

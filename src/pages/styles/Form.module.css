@@ -1,0 +1,84 @@
+.pageContainer{
+    background-color: #071332;
+    color: #fff;
+    box-sizing: border-box;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header,.msg,.giftSelected, .container_form{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.textForm, .header{
+    line-height: 1;
+    font-weight: 600;
+}
+
+.header{
+    height: 15vh;
+    align-items: end;
+    font-size: 1.4em;
+    box-sizing: border-box;
+}
+
+.textForm{
+    padding: 2em 1em;
+    font-size: 1.2;
+    box-sizing: border-box;
+}
+
+
+
+
+.msg{
+    box-sizing: border-box;
+    align-items: center;
+    padding-top:2em ;
+    padding-bottom: 1em;
+    font-size: 2em;
+}
+
+.giftSelected{
+    font-size: 1.7em;
+    font-weight: 600;
+    padding: 1em 0;
+    color: #D46B9D;
+    filter: drop-shadow(1px 1px 0 #fff);
+}
+
+.container_form{
+    padding: 2em 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.form{
+    width: 80vw;
+    height: 5vh;
+    font-size: 1em;
+    box-sizing: border-box;
+    padding-left: 1em;
+    border: none;
+    outline: none;
+}
+
+.btn{
+    height: 5vh;
+    font-size: 1.5em;
+    background: #D46B9D;
+    filter: drop-shadow( 0px 0px 6px #ffffff75);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 1.5em ;
+    margin-top: 1em;
+    border-radius: .5em;
+}
+

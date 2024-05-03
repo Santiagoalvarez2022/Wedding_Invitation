@@ -1,0 +1,29 @@
+.pageContainer{
+    margin-top: 10vh;
+    background-color: #9D2C62;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title,.msg{
+    color: #ffffff;
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: .05em;
+}
+.title{
+
+    font-size: 1.6em;
+}
+.msg{
+    padding: 1em;
+    font-size: 1.8em;
+
+}
+.subtitle{
+    color: #D8E6ED;
+    font-weight: 500;
+    padding: 1em;
+}
+

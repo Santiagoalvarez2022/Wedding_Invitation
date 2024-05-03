@@ -1,0 +1,29 @@
+.containerList{
+    box-sizing: border-box;
+    padding-top: 2em;
+    height: 60vh;
+    border: solid rgb(44, 43, 43) 2px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    overflow: scroll;
+}
+
+
+/*estilos de los items*/
+
+.itemContainer{
+    text-align: start;
+    box-sizing: border-box;
+    padding: 0px;
+    padding-left: 1em;
+
+    border-bottom:2px #100816 solid  ;
+    font-size: 1.2em;
+    color: #D8E6ED;
+    text-decoration: none;
+}
+
+
+
