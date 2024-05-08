@@ -7,30 +7,22 @@ export default function Invitation() {
   
   return (
     <div className={style.pageContainer}>
-      <Flowers />
-      <h3 className={style.title}>Matias y Soledad</h3>
-      <div className={style.textContainer}>
-
+      <h3 className={style.title}>M y A</h3>
       
-      <p className={style.paragraph}>
-        Queremos invitarlos a compartir con nosotros un día lleno de amor, alegría y promesas eternas
-  
-      </p>
-      <br />
-      <p className={style.paragraph}>
-      Nos casaremos el 26/04/2024 en “lugar”, y nos encantaría que formen parte de este momento tan especial
-      </p>
-      <br />
-
-      <p className={style.paragraph}>
-      Vuestra presencia será el mayor regalo que podamos recibir, mientras damos inicio a esta nueva aventura juntos. Esperamos contar con ustedes para celebrar el amor que nos une.
-      </p>
-
-       
-
-
+      <div className={style.content_data}>
+        <h4 className={style.title_data}>Civil</h4>
+        <p className={style.text_data}>- Viernes 16 de Agosto </p> 
+        <p className={style.text_data}>- Lugar y fecha a confirmar</p>
       </div>
-        
+
+      <div className={style.content_data}>
+        <h4 className={style.title_data} >Fiesta</h4>
+        <p className={style.text_data}>- Viernes 16 de Agosto </p> 
+        <p className={style.text_data}>- Dress code “Elegante-sport” </p> 
+      </div>
+
+
+
     </div>
   )
 }

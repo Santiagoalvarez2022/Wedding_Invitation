@@ -16,8 +16,8 @@ function App() {
     <div className="app">
       <Home />
         
-      <Invitation />
       <MosaicPhotos />
+      <Invitation />
       <Gift />
     
     </div>
