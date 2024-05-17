@@ -1,0 +1,60 @@
+.containerPageInv{
+    height: 100vh;
+    border: solid red 2px;
+    background-color: #3557BC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.header{
+    height: 25vh;
+    width: 100vw;
+    border: solid red 2px;
+    margin-top: 2vh;
+    background-image: url("../../assets/list_inv.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+}
+
+.containerList{
+    border: solid red 2px;
+
+    margin-top:  4vh;
+    width: 80vw;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.input{
+    height: 6vh;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding-left: 1em;
+    border-radius: .5em;
+}
+
+.select{
+    width: 100%;    
+}
+
+
+.btn{
+    margin-top: 10vh;
+    background: #FFF23D;
+    width: 40vw;
+    height: 7vh;
+    border-radius: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    border: .2em solid black;
+    filter: drop-shadow(0px 2px 0px #FFF23D);
+}

@@ -1,0 +1,14 @@
+.nav{
+    border: solid red 2px;
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 2em;
+}
+
+.button{
+    height: 4vh;
+    color: antiquewhite;
+}

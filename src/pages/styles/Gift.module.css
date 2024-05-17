@@ -22,7 +22,9 @@
 }
 .subtitle{
     color: #D8E6ED;
+    font-size: medium;
     font-weight: 500;
     padding: 1em;
+    text-align: center;
 }
 

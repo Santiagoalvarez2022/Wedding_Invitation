@@ -8,6 +8,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Form from './pages/Form.jsx';
+import GuestList from './pages/GuestList.jsx';
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,12 @@ const router = createBrowserRouter([
     path: "gift/:giftid",
     element: <Form />,
   },
+  {
+    path: "/invitados",
+    element: <GuestList />,
+  },
+
+
 ]);
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
