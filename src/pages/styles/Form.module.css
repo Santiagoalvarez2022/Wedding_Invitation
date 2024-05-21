@@ -19,11 +19,13 @@
 }
 
 .header{
-    height: 15vh;
+    height: 10vh;
     align-items: end;
     font-size: 1.4em;
     box-sizing: border-box;
 }
+
+
 
 .textForm{
     padding: 2em 1em;

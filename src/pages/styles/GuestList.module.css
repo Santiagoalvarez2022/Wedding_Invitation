@@ -1,17 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sofia+Sans+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap');
+
 .containerPageInv{
-    height: 100vh;
-    border: solid red 2px;
     background-color: #3557BC;
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    box-sizing: border-box;
+    height: 100vh;
+    overflow-y: scroll;
 }
 
 .header{
     height: 25vh;
     width: 100vw;
-    border: solid red 2px;
     margin-top: 2vh;
     background-image: url("../../assets/list_inv.svg");
     background-repeat: no-repeat;
@@ -21,14 +25,12 @@
 }
 
 .containerList{
-    border: solid red 2px;
-
-    margin-top:  4vh;
+    margin-top:  2vh;
     width: 80vw;
     display:flex;
     flex-direction: column;
     align-items: center;
-
+    text-align: center;
 }
 
 .input{
@@ -38,15 +40,40 @@
     outline: none;
     padding-left: 1em;
     border-radius: .5em;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 100%;
+
 }
 
-.select{
+
+
+.list{
     width: 100%;    
+    list-style-type: none;
+    overflow-y: scroll;
+    height: 30vh;
 }
 
+
+
+.item{
+    color: white; 
+    width: 100%;    
+    background: white;
+    border: none;
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    padding-left: 1em;
+    background-color: dimgray;
+}
 
 .btn{
     margin-top: 10vh;
+    margin-bottom: 10vh;
     background: #FFF23D;
     width: 40vw;
     height: 7vh;

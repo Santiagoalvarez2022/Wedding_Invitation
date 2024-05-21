@@ -2,6 +2,8 @@ import React,{useState} from 'react'
 import { useParams } from 'react-router-dom'
 import style from "./styles/Form.module.css"
 import Flowers from '../components/Flowers/Flowers';
+import ButtonNavegation from "../components/button_back/ButtonNavegation"
+
 export default function Form(props) {
     const {giftid} = useParams()
 
@@ -18,6 +20,8 @@ export default function Form(props) {
 
   return (
     <div className={style.pageContainer}>
+        <ButtonNavegation  route={"/"} />
+
         <p className={style.header}>Vimos que elegiste un <br /> item de la lista.</p>
 
         <Flowers  />
