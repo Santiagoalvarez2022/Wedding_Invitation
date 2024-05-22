@@ -7,16 +7,14 @@ export default function MosaicPhotos() {
 
       </div>
 
-      <div className={style.boxTwo}>
 
         <div className={style.divOne}>
           <div className={style.img_two}></div> 
           <div className={style.img_three} ></div> 
         </div>
 
-        <div className={style.img_four}>
-        </div>
-      </div>
+        {/* <div className={style.img_four}>
+        </div> */}
 
     </div>
   )

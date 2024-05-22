@@ -6,19 +6,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faLemon} from '@fortawesome/free-solid-svg-icons'
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 export default function GuestList() {
 
   // lista de nombre traidos desde google sheets
@@ -83,7 +70,7 @@ export default function GuestList() {
     setSelectedGuests({})
     setData("")
   } 
-  
+  console.log(options); 
   const route = "/";
   
   return (
@@ -98,20 +85,31 @@ export default function GuestList() {
             <ul className={style.list}>
               {
                 showOptions && options.length>0 && (options.map((option,index)=>{
-                  return <li
+                  if (option.Asiste === "NO") {
+                    
+                    return <li
                     className={style.item}
                     key={index}
                     onClick={e => handlerSelect(option)}
-                  >
+                    >
                     <FontAwesomeIcon icon={faLemon} color="#FFF23D" />
                     {option.Invitado} 
                   </li>
+                  }
                 })) 
               }
             </ul>
         </div>
-        
+     
         {
+          selectedGuests.Invitado ? 
+            <input  className={style.input_} type="text" placeholder="Dni" />
+          
+        
+          : null
+        }
+           
+           {
           selectedGuests.Invitado ? 
           
           <div className={style.btn}

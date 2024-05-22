@@ -9,6 +9,7 @@ import {
 } from "react-router-dom";
 import Form from './pages/Form.jsx';
 import GuestList from './pages/GuestList.jsx';
+import GiftList from './pages/GiftList.jsx';
 
 const router = createBrowserRouter([
   {
@@ -23,7 +24,10 @@ const router = createBrowserRouter([
     path: "/invitados",
     element: <GuestList />,
   },
-
+  {
+    path: "/giftlist",
+    element: <GiftList/>,
+  },
 
 ]);
 ReactDOM.createRoot(document.getElementById('root')).render(

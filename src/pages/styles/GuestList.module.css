@@ -72,8 +72,8 @@
 }
 
 .btn{
-    margin-top: 10vh;
-    margin-bottom: 10vh;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
     background: #FFF23D;
     width: 40vw;
     height: 7vh;
@@ -84,4 +84,18 @@
     font-weight: 600;
     border: .2em solid black;
     filter: drop-shadow(0px 2px 0px #FFF23D);
+}
+
+.input_{
+    height: 6vh;
+    width: 60%;
+    border: none;
+    outline: none;
+    padding-left: 1em;
+    border-radius: .5em;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 100%;
+
 }

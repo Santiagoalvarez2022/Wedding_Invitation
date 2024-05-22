@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sofia+Sans+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap');
+
+
 .pageContainer{
     background-color: #071332;
     color: #fff;
@@ -28,9 +31,11 @@
 
 
 .textForm{
-    padding: 2em 1em;
+    padding: .5em 1em;
     font-size: 1.2;
     box-sizing: border-box;
+    display: flex;
+    text-align: center;
 }
 
 
@@ -39,7 +44,7 @@
 .msg{
     box-sizing: border-box;
     align-items: center;
-    padding-top:2em ;
+    padding-top:1em ;
     padding-bottom: 1em;
     font-size: 2em;
 }
@@ -56,26 +61,18 @@
     padding: 2em 0;
     flex-direction: column;
     align-items: center;
+
 }
 
 
 
-.form{
-    width: 80vw;
-    height: 5vh;
-    font-size: 1em;
-    box-sizing: border-box;
-    padding-left: 1em;
-    border: none;
-    outline: none;
-}
+
 
 .btn{
     height: 5vh;
     font-size: 1.5em;
     background: #D46B9D;
     filter: drop-shadow( 0px 0px 6px #ffffff75);
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -84,3 +81,16 @@
     border-radius: .5em;
 }
 
+.input{
+    height: 6vh;
+    width: 60%;
+    border: none;
+    outline: none;
+    padding-left: 1em;
+    border-radius: .5em;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 100%;
+
+}

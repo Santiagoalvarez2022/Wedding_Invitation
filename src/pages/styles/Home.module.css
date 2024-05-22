@@ -20,24 +20,14 @@
 
 
 .img_couple{
-  width: 70%; 
-  animation: appear 1s 0.2s forwards; /* Aplica la animación después de 0.5s */
+  width: 60%; 
+  
 }
 .img_title{
   width: 70%; 
-  animation: appear 1s 0.2s forwards; /* Aplica la animación después de 0.5s */
   margin-top: 6vh;
 }
 
 
 
 
-  
-@keyframes appear {
-    from {
-      opacity: 0; /* Empieza con opacidad 0 */
-    }
-    to {
-      opacity: 1; /* Termina con opacidad 1 */
-    }
-  }

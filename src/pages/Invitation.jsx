@@ -25,8 +25,10 @@ export default function Invitation() {
       <div className={style.space}></div>
       <div className={style.content_data}>
         <h4 className={style.title_data} >Fiesta</h4>
-        <p className={style.text_data}>- Viernes 16 de Agosto </p> 
-        <p className={style.text_data}>- Dress code “Elegante-sport” </p> 
+      
+          <p className={style.text_data}>- Viernes 16 de Agosto </p> 
+          <p className={style.text_data}>- Dress code “Elegante-sport”   </p> 
+      
       </div>
 
       {showInput && 

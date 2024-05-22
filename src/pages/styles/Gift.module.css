@@ -1,8 +1,10 @@
 .pageContainer{
+    padding-top: 10vh;
     background-color: #9D2C62;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: linear-gradient(#175796,#9D2C62);
 }
 
 .title,.msg{
@@ -15,16 +17,17 @@
 
     font-size: 1.6em;
 }
-.msg{
-    padding: 1em;
-    font-size: 1.8em;
-
-}
 .subtitle{
     color: #D8E6ED;
     font-size: medium;
     font-weight: 500;
     padding: 1em;
     text-align: center;
+
 }
 
+.container_btn{
+    box-sizing: border-box;
+    margin-bottom: 10vh;
+    margin-top: 4vh;
+}

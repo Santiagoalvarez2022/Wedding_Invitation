@@ -1,13 +1,16 @@
 .containerList{
+    margin-top: 3vh;
     box-sizing: border-box;
-    padding-top: 2em;
+    padding-top: 1em;
     height: 60vh;
-    border: solid rgb(44, 43, 43) 2px;
     width: 70%;
     display: flex;
     flex-direction: column;
     gap: 1em;
     overflow: scroll;
+    border-top: #D8E6ED solid 1px;
+    
+
 }
 
 
@@ -19,7 +22,6 @@
     padding: 0px;
     padding-left: 1em;
 
-    border-bottom:2px #100816 solid  ;
     font-size: 1.2em;
     color: #D8E6ED;
     text-decoration: none;
