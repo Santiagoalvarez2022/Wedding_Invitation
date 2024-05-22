@@ -16,6 +16,7 @@
     background-size: cover;
     box-sizing: border-box;
     padding-top: 15vh;
+    
 }
 
 
@@ -31,6 +32,16 @@
   margin-top: 6vh;
 }
 
+.sombra{
+  height: 100%;
+  width: 100%;
+  
+  bottom: 0%;
 
+  
+
+background: rgb(255,255,255);
+background: linear-gradient(180deg,  rgba(23, 86, 150, 0.092) 0%, rgba(255, 255, 255, 1)  91%);
+}
 
 

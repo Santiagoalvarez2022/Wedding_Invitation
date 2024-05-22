@@ -19,15 +19,18 @@ export default function Invitation() {
       
       <div className={style.content_data}>
         <h4 className={style.title_data}>Civil</h4>
-        <p className={style.text_data}>- Viernes 16 de Agosto </p> 
-        <p className={style.text_data}>- Lugar y fecha a confirmar</p>
+        <p className={style.text_data}>- Viernes 16 de Agosto </p>
+        <p className={style.text_data}>- Lugar y horario a confirmar</p>
+
       </div>
       <div className={style.space}></div>
       <div className={style.content_data}>
         <h4 className={style.title_data} >Fiesta</h4>
       
           <p className={style.text_data}>- Viernes 16 de Agosto </p> 
-          <p className={style.text_data}>- Dress code “Elegante-sport”   </p> 
+          <p className={style.text_data}>- Horario: 18hs a 23hs</p>
+          <p className={style.text_data}>- Lugar: "Amelie Eventos" Bv. 27 de febrero 2515</p> 
+          <p className={style.text_data}>- Dress code “Formal”</p> 
       
       </div>
 

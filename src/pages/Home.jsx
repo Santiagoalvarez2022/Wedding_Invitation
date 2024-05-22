@@ -8,7 +8,7 @@ export default function Home() {
     <div className={style.pageContainer}>
       <img className={style.img_couple} src={couple_img} alt="male y ale" />
       <img className={style.img_title} src={title_img} alt="nombres" />
-
+      <div className={style.sombra}></div>
     </div>
   )
 }

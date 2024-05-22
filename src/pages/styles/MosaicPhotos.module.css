@@ -1,13 +1,18 @@
 .pageContainer{
-    background-color: #175796 ;
     display: flex;
     flex-direction: column;
     justify-content: center;
     box-sizing: border-box;
     padding-inline: 1rem;
-    margin-top: 10vh;
     gap: .7rem;
+    padding-top: 10vh;
+    /* background-image: linear-gradient(#fff,#175796); */
 
+    /* background: rgb(255,255,255);
+background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(23,87,150,1) 100%); */
+
+background: rgb(255,255,255);
+background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(23,87,150,1) 50%);
 }
 
 
