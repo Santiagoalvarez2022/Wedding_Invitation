@@ -20,8 +20,11 @@
 
 
 .img_couple{
-  width: 60%; 
-  
+  width: 65%; 
+   filter: drop-shadow( 0rem  0rem  3rem #fff); 
+  border: solid #fff 3px;
+
+  border-radius: 50%;
 }
 .img_title{
   width: 70%; 
