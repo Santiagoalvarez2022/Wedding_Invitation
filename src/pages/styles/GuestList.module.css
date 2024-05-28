@@ -17,7 +17,7 @@
     height: 25vh;
     width: 100vw;
     margin-top: 2vh;
-    background-image: url("../../assets/list_inv.svg");
+    background-image: url("../../assets/guestListHeader.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -71,19 +71,41 @@
     background-color: dimgray;
 }
 
-.btn{
+.instructions{
+    margin-bottom:3vh;
+    color: white; 
+
+}
+
+.btn,.btn_send{
     margin-top: 2vh;
     margin-bottom: 1vh;
-    background: #FFF23D;
+    background-color: #FFF23D;
+
     width: 40vw;
     height: 7vh;
-    border-radius: 1em;
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: 600;
-    border: .2em solid black;
+    
+    
+}
+
+
+
+.btn_send{
+    border-radius: 1em;
+    background-color: #FFF23D;
     filter: drop-shadow(0px 2px 0px #FFF23D);
+    border: .2em solid black;
+}
+
+.btn{
+    font-size: 4vh;
+    color:rgba(106, 104, 104, 0.768);
+    border-radius: .5em;
+
 }
 
 .input_{

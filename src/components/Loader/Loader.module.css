@@ -1,0 +1,27 @@
+.loader_container{
+    background: rgb(235, 235, 235);
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.loader{
+    font-size: 8vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5vh;
+    color: yellow;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.482));
+}
+.p_loading{
+    font-size: 3vh;
+}
+
+

@@ -71,14 +71,28 @@
 
 .button_invitation{
 
-    height: 60%;
+    height: 50%;
     width:  50%;
-    background-image: url("../../assets/btn_inv.svg");
+
+    display: flex;
+    
+    border: none;
+    border-radius: 1em;
+
+
+}
+
+.btn{
+    height: 100%;
+    width: 100%;
+    background-image: url("../../assets/confirm_assistance.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    filter: drop-shadow(0 0.5em .4em #071332b6);
+    box-sizing: border-box;
 }
+
+
 
 
 

@@ -5,8 +5,43 @@
     <link rel="icon" type="image/svg+xml" href="./src/assets/circleCouple.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Male & Alejo</title>
+    <style>
+      /* Añadir estilos aquí si es necesario */
+      #only-mobile-message {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: black;
+        padding: 20px;
+        border-radius: 10px;
+        font-size: 1.5em;
+        text-align: center;
+      }
+
+      body.not-mobile #only-mobile-message {
+        display: block;
+      }
+
+      body.not-mobile #root {
+        display: none;
+      }
+    </style>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+        if (/android/i.test(userAgent) || /iPhone/.test(userAgent) && !window.MSStream) {
+          document.body.classList.add('mobile');
+        } else {
+          document.body.classList.add('not-mobile');
+        }
+      });
+    </script>
   </head>
   <body>
+    <div id="only-mobile-message">Esta pagina fue diseñada solo para telefonos celulares</div>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

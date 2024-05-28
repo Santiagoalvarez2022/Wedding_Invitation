@@ -1,0 +1,93 @@
+.modal_container{
+    background: rgba(255, 255, 255, 0.866);
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: appear 1s ease-in-out; 
+}
+
+
+
+.modal{
+    background:#3557BC;
+    width: 80vw;
+    box-sizing: border-box;
+    padding-inline: 1vh;
+    border-radius: 1em  ;
+}
+.modal_loading{
+    font-size: 5vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5vh;
+}
+.p_loading{
+    font-size: 3vh;
+}
+.confirmed,.subtitle{
+    color: aliceblue;
+    text-align: center;
+}
+
+.confirmed{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2vh;
+}
+
+.subtitle{
+    margin-bottom: 2vh;
+}
+.img{
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow-y: scroll;
+    
+}
+
+.container_btn{
+    display: flex;
+    justify-content: end;
+}
+
+.container_btn_pages{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    box-sizing: border-box;
+    padding: 1vh;
+    
+}
+
+.btn_close{
+
+    margin: 1vh 0 0 0 ; 
+}
+
+.btn,.btn_close{
+    height: 5vh;
+    width: 5vh;
+    font-size: 3vh;
+    border-radius: 50%;
+    border: none;
+}
+
+@keyframes appear {
+    from {
+      opacity: 0; /* Empieza con opacidad 0 para que esté oculto al principio */
+    }
+    to {
+      opacity: 1; /* Al finalizar la animación, la opacidad será 1, haciendo que el elemento aparezca gradualmente */
+    }
+  }
+

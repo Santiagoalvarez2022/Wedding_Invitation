@@ -4,10 +4,11 @@ import {confirm_guest,get_guest} from "../service/apiGuest"
 import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faLemon} from '@fortawesome/free-solid-svg-icons'
-
+import Modal from "../components/modal/Modal";
+import { useNavigate } from "react-router-dom";
 
 export default function GuestList() {
-
+  let navigate = useNavigate();
   // lista de nombre traidos desde google sheets
   const [Guest,setGuets] = useState([])
   // estado del input
@@ -17,11 +18,19 @@ export default function GuestList() {
   // estado que evalua si hay un nombre en la option 
   const [showOptions,setShhowOptions] = useState(false)
   // invitado seleccionado
-  const [selectedGuests, setSelectedGuests] = useState({})
+  const [selectedGuests, setSelectedGuests] = useState(null)
+
+  //modal
+  const [isOpen, setOpen] = useState(false)
+
+  //loading 
+  const [loading, setLoading] = useState(false)
+
 
   useEffect(()=>{
     //obtengo la lista de invitados 
     get_guest(setGuets)
+   
   },[])
 
   const handlerData = ({target}) =>{
@@ -48,31 +57,45 @@ export default function GuestList() {
     setShhowOptions(false)
   }
 
+  const handlerModal = () =>{
+    setOpen(false)
+    get_guest(setGuets)
+  }
 
   const sendData = async(data) =>{
     //no enviar nombre sin antes verificar que el nombre este en la lista, y que sea selecionado de las options
+
+    //evaluo que se halla seleccionado un invitado para enviar la info
+
+    if (selectedGuests) {
+      setLoading(true)
+
     try {
       const result = await confirm_guest(data.id)
-      console.log("resultado del envio",result);
 
       if (result.status === 200){
-        alert(`invitacion confirmada`)
+        setOpen(true)
       }
 
     } catch (error) {
-      
+
+      console.log("ocurrio un error", error);
+      navigate("/Error");
+    } finally {
+      setLoading(false)
     }
 
-    //CONFIRMAR 
-    //DEVOLVER ALERT DICIENDO QUE SE CONFIRMO 
+    setSelectedGuests(null)
+    setData("") 
+    } else{
+
+    }
     
-    
-    setSelectedGuests({})
-    setData("")
   } 
-  console.log(options); 
   const route = "/";
-  
+
+
+ 
   return (
     <div className={style.containerPageInv}>
 
@@ -80,11 +103,15 @@ export default function GuestList() {
         <div className={style.header}></div>
 
         <div className={style.containerList}>
+          <p className={style.instructions}> Busca tu nombre en la Lista de invitados y luego envia tu confirmación</p>
+
             <input  className={style.input} value={data} onChange={handlerData} type="text" placeholder="Nombre y Apellido" />
 
             <ul className={style.list}>
               {
                 showOptions && options.length>0 && (options.map((option,index)=>{
+
+
                   if (option.Asiste === "NO") {
                     
                     return <li
@@ -101,22 +128,16 @@ export default function GuestList() {
             </ul>
         </div>
      
-        {
-          selectedGuests.Invitado ? 
-            <input  className={style.input_} type="text" placeholder="Dni" />
+       
+      
           
-        
-          : null
-        }
-           
-           {
-          selectedGuests.Invitado ? 
-          
-          <div className={style.btn}
+          <div  className={ selectedGuests ? style.btn_send : style.btn }
           onClick={e=>sendData(selectedGuests)}
-          > Enviar</div>
-          : null
-        }
+          >  {selectedGuests ? "Enviar" : <FontAwesomeIcon icon={faLemon} spin/>}</div>
+       
+        
+
+        <Modal isOpen={isOpen} closeModal={handlerModal} loading={loading} />
     </div>
   )
 }

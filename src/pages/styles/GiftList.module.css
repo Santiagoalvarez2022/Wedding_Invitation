@@ -9,14 +9,23 @@
 }
 
 .text{
+    width: 70%;
     box-sizing: border-box;
     font-size: 100%;
     color:#fff;
-    height: 5vh;
-    }
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.alias{
+    color:#fff;
+
+}
+
 
 .containerFlower{
-    height: 20vh;
+
+    height: 10vh;
     width: 100%;
     display: flex;
     align-items: center;

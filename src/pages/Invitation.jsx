@@ -8,10 +8,7 @@ import { Link } from 'react-router-dom';
 
 export default function Invitation() {
   
-  const [showInput,setShowInput] = useState(true);
-  const handlerInput = () =>{
-    setShowInput(!showInput);
-  } 
+  
 
   return (
     <div className={style.pageContainer}>
@@ -33,13 +30,16 @@ export default function Invitation() {
           <p className={style.text_data}>- Dress code “Formal”</p> 
       
       </div>
-
-      {showInput && 
+ 
       <div className={style.button_container} >
+        
         <Link className={style.button_invitation} to="/invitados">
+          <div className={style.btn}>
+            
+          </div>
         </Link>
       </div>
-      }
+      
 
 
 

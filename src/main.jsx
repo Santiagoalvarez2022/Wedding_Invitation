@@ -10,15 +10,12 @@ import {
 import Form from './pages/Form.jsx';
 import GuestList from './pages/GuestList.jsx';
 import GiftList from './pages/GiftList.jsx';
+import Error from './components/Error/Error.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-  },
-  {
-    path: "gift/:giftid",
-    element: <Form />,
   },
   {
     path: "/invitados",
@@ -28,7 +25,10 @@ const router = createBrowserRouter([
     path: "/giftlist",
     element: <GiftList/>,
   },
-
+  {
+    path: "/Error",
+    element: <Error />,
+  },
 ]);
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
