@@ -5,6 +5,7 @@ import List from '../components/WishList/List'
 import Flowers from '../components/Flowers/Flowers'
 
 export default function GiftList() {
+  
   return (
     <div className={style.containerPage}>
       <ButtonNavegation route={"/"} />

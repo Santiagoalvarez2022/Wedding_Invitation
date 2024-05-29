@@ -1,5 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sofia+Sans+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap');
 
+
+@keyframes identifier {
+    0%,100%{
+        filter: drop-shadow( .1em .1em 1em rgb(220, 220, 223));
+    }
+
+    50%{
+        filter: drop-shadow( .1em .1em 1em rgb(45, 45, 239));
+
+    }
+}
+
+@keyframes animationText {
+    0%,100%{
+       color: #ffffff;
+    }
+
+    50%{
+       color:#175796;
+
+    }
+}
+
+
 .pageContainer{
     width: 100vw;
     box-sizing: border-box;
@@ -14,9 +38,6 @@
 /*animacion para que cuando se comience a ver un 20% de la pagina se cambia a background-color: #8BAECE  y apareczca el texto*/
 
 
-.title,.title_data,.text_data{
-
-}
 .title{
     height: 25vh;
 
@@ -62,7 +83,7 @@
 }
 
 .button_container{
-    height: 25vh;
+    height: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,17 +91,20 @@
 
 
 .button_invitation{
-
+    
     height: 50%;
     width:  50%;
-
+    
     display: flex;
     
-    border: none;
+    border: none; 
+
     border-radius: 1em;
 
+    animation: identifier infinite 1s;
 
 }
+
 
 .btn{
     height: 100%;
@@ -94,9 +118,19 @@
 
 
 
+.btn_text{
+    margin-top:2vh;
+    color: #ffffffe0;
+    box-sizing: border-box;
+    padding: 1em;
+    text-align: center; 
+    animation: animationText infinite 1.5s;
 
+}
 
-
+.btn_text_p{
+    margin-bottom: 1vh;
+}
 
 
 /* .sangria{

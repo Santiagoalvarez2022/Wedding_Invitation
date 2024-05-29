@@ -3,6 +3,8 @@ import style from "./styles/Invitation.module.css"
 import Flowers from '../components/Flowers/Flowers'
 import ButtonNavegation from '../components/button_back/ButtonNavegation';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -31,6 +33,11 @@ export default function Invitation() {
       
       </div>
  
+        <div className={style.btn_text}>
+            <p className={style.btn_text_p}>Confirma tu asistencia aqui </p> 
+            <FontAwesomeIcon icon={faArrowDown} />
+        </div> 
+
       <div className={style.button_container} >
         
         <Link className={style.button_invitation} to="/invitados">
