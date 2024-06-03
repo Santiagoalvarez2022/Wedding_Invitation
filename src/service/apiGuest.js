@@ -1,12 +1,10 @@
 import axios from "axios"
-
-
+const API_GUEST = import.meta.env.VITE_URL_GUESTS
 //OBTENER LISTA
 export const get_guest = async(setGuest) =>{
-  
     //setGuest es una funcion que modifica el estado del componente 
     try {
-        const {data} = await axios("https://sheet.best/api/sheets/e86d7859-5c14-4bd3-81f4-8fbc09a1b2bd?_raw=1");
+        const {data} = await axios(`${API_GUEST}?_raw=1`);
         setGuest(data)
     } catch (error) {
         //validar y arrojar error
@@ -15,17 +13,16 @@ export const get_guest = async(setGuest) =>{
     
     }
 }
-
+ 
 
 
 //MODIFICAR LISTA
 
 export const confirm_guest = async(id) =>{
-   
     try {
-
         //ACEPTO LA INVITACION DEL INVITADO CON EL ID PSADO POR PARAMETRO 
-        const data = await axios.patch(`https://sheet.best/api/sheets/e86d7859-5c14-4bd3-81f4-8fbc09a1b2bd/${id}`,{Asiste:"SI"})
+        const data = await axios.patch(`${API_GUEST}/${id}`,{Asiste:"SI"})
+        console.log(data);
         return data
 
     } catch (error) {
