@@ -13,8 +13,44 @@ This project is a mobile-only website designed for a couple who were getting mar
 - **Easy Access:** Designed to be accessible from any mobile device, making it easy for all guests to use.
 
 ## Technologies Used
-- **Frontend:** [Specify the frontend technologies used, such as HTML, CSS, JavaScript, specific frameworks, or libraries if applicable].
-- **Backend/Integration:** Utilization of scripts for direct integration with spreadsheets [specify the technology or service used, for example, Google Sheets API].
+- **Frontend:** Vite-React
+  - **Dependencies:**
+    ```json
+    {
+      "@fortawesome/fontawesome-svg-core": "^6.5.2",
+      "@fortawesome/free-brands-svg-icons": "^6.5.2",
+      "@fortawesome/free-regular-svg-icons": "^6.5.2",
+      "@fortawesome/free-solid-svg-icons": "^6.5.2",
+      "@fortawesome/react-fontawesome": "^0.2.1",
+      "axios": "^1.7.1",
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0",
+      "react-router-dom": "^6.23.0",
+      
+    }
+    ```
+- **Backend/Integration:** Utilization of scripts for direct integration with spreadsheets (e.g., Google Sheets API).
+
+## Example Code for Spreadsheet Integration
+### Fetching Gift List
+```javascript
+//OBTENER LISTA
+export const get_gifts = async (setGift, navigate) => {
+    // setGift es una función que modifica el estado del componente
+    try {
+        const { data } = await axios("https://sheet.best/api/sheets/2e1557ad-0033-4eb1-a2ea-ff0205dfe987?_raw=1");
+        
+        // Solo enviaremos aquellos elementos cuyo status sea igual a "no" es decir que aún falta elegir.
+        const gift_list = data.filter((g) => g.selected === "no" && g);
+
+        setGift(gift_list);
+    } catch (error) {
+        // Validar y arrojar error
+        console.log("Error en la petición de lista de regalos", { error: error.message });
+        navigate("/Error");
+        throw new Error("Ocurrió un error");
+    }
+};
 
 ## Lessons Learned
 This project allowed me to deepen my understanding of integrating web applications with spreadsheets, optimizing for mobile devices, and the importance of creating cost-effective solutions for clients.
